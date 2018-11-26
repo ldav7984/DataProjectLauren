@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AB70179A21AC7D17002BC0BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB70179921AC7D17002BC0BB /* AppDelegate.swift */; };
-		AB70179C21AC7D17002BC0BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB70179B21AC7D17002BC0BB /* ViewController.swift */; };
+		AB70179C21AC7D17002BC0BB /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB70179B21AC7D17002BC0BB /* DataViewController.swift */; };
 		AB70179F21AC7D17002BC0BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB70179D21AC7D17002BC0BB /* Main.storyboard */; };
 		AB7017A121AC7D30002BC0BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB7017A021AC7D30002BC0BB /* Assets.xcassets */; };
 		AB7017A421AC7D30002BC0BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB7017A221AC7D30002BC0BB /* LaunchScreen.storyboard */; };
@@ -17,7 +17,7 @@
 /* Begin PBXFileReference section */
 		AB70179621AC7D17002BC0BB /* DataProjectLauren.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DataProjectLauren.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB70179921AC7D17002BC0BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AB70179B21AC7D17002BC0BB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AB70179B21AC7D17002BC0BB /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
 		AB70179E21AC7D17002BC0BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AB7017A021AC7D30002BC0BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB7017A321AC7D30002BC0BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,14 +54,38 @@
 		AB70179821AC7D17002BC0BB /* DataProjectLauren */ = {
 			isa = PBXGroup;
 			children = (
-				AB70179921AC7D17002BC0BB /* AppDelegate.swift */,
-				AB70179B21AC7D17002BC0BB /* ViewController.swift */,
-				AB70179D21AC7D17002BC0BB /* Main.storyboard */,
-				AB7017A021AC7D30002BC0BB /* Assets.xcassets */,
-				AB7017A221AC7D30002BC0BB /* LaunchScreen.storyboard */,
-				AB7017A521AC7D30002BC0BB /* Info.plist */,
+				AB7017AC21AC7D6B002BC0BB /* Resources */,
+				AB7017AD21AC7D74002BC0BB /* Controller */,
+				AB7017AB21AC7D61002BC0BB /* View */,
 			);
 			path = DataProjectLauren;
+			sourceTree = "<group>";
+		};
+		AB7017AB21AC7D61002BC0BB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AB70179D21AC7D17002BC0BB /* Main.storyboard */,
+				AB7017A221AC7D30002BC0BB /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AB7017AC21AC7D6B002BC0BB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AB70179921AC7D17002BC0BB /* AppDelegate.swift */,
+				AB7017A021AC7D30002BC0BB /* Assets.xcassets */,
+				AB7017A521AC7D30002BC0BB /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AB7017AD21AC7D74002BC0BB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AB70179B21AC7D17002BC0BB /* DataViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +159,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB70179C21AC7D17002BC0BB /* ViewController.swift in Sources */,
+				AB70179C21AC7D17002BC0BB /* DataViewController.swift in Sources */,
 				AB70179A21AC7D17002BC0BB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,7 +305,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = DataProjectLauren/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/DataProjectLauren/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -298,7 +322,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = DataProjectLauren/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/DataProjectLauren/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

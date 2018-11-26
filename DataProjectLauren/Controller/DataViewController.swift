@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  DataViewController.swift
 //  DataProjectLauren
 //
 //  Created by Davis, Lauren on 11/26/18.
@@ -8,17 +8,16 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class DataViewController: UIViewController
+{
 
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+    
 
 
 }
