@@ -32,7 +32,7 @@ class BucketItemCell: UITableViewCell
     {
         didSet
         {
-            updateViewCell()
+            updateCellView()
         }
     }
     
@@ -51,4 +51,19 @@ class BucketItemCell: UITableViewCell
         let emoji = UnicodeScalar(ascii)?.description
         return emoji!
     }
+    
+    private func updateCellView() -> Void
+    {
+        if(currentBucketItem != nil)
+        {
+            bucketItemSignature.text = currentBucketItem.itemAuthor
+            bucketItemText.text = currentBucketItem.itemContents
+        }
+        else
+        {
+            bucketItemSignature.text = "Author goes here"
+            bucketItemText.text = "Bucket item here"
+        }
+    } //end of updateCellView
+    
 }
