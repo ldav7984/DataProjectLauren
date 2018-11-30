@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		AB70179A21AC7D17002BC0BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB70179921AC7D17002BC0BB /* AppDelegate.swift */; };
-		AB70179C21AC7D17002BC0BB /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB70179B21AC7D17002BC0BB /* DataViewController.swift */; };
 		AB70179F21AC7D17002BC0BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB70179D21AC7D17002BC0BB /* Main.storyboard */; };
 		AB7017A121AC7D30002BC0BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB7017A021AC7D30002BC0BB /* Assets.xcassets */; };
 		AB7017A421AC7D30002BC0BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB7017A221AC7D30002BC0BB /* LaunchScreen.storyboard */; };
+		ABBF6F9821B1BBE000ED2474 /* BucketItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBF6F9721B1BBE000ED2474 /* BucketItemCell.swift */; };
+		ABBF6F9B21B1BC1A00ED2474 /* BucketItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBF6F9A21B1BC1A00ED2474 /* BucketItem.swift */; };
+		ABBF6F9D21B1BC4000ED2474 /* bucket18.csv in Resources */ = {isa = PBXBuildFile; fileRef = ABBF6F9C21B1BC4000ED2474 /* bucket18.csv */; };
+		ABBF6F9F21B1BC8E00ED2474 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBF6F9E21B1BC8E00ED2474 /* DataViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AB70179621AC7D17002BC0BB /* DataProjectLauren.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DataProjectLauren.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB70179921AC7D17002BC0BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AB70179B21AC7D17002BC0BB /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
 		AB70179E21AC7D17002BC0BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AB7017A021AC7D30002BC0BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB7017A321AC7D30002BC0BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB7017A521AC7D30002BC0BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABBF6F9721B1BBE000ED2474 /* BucketItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketItemCell.swift; sourceTree = "<group>"; };
+		ABBF6F9A21B1BC1A00ED2474 /* BucketItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketItem.swift; sourceTree = "<group>"; };
+		ABBF6F9C21B1BC4000ED2474 /* bucket18.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = bucket18.csv; path = ../../../../Downloads/bucket18.csv; sourceTree = "<group>"; };
+		ABBF6F9E21B1BC8E00ED2474 /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,7 @@
 		AB70179821AC7D17002BC0BB /* DataProjectLauren */ = {
 			isa = PBXGroup;
 			children = (
+				ABBF6F9921B1BBE900ED2474 /* Model */,
 				AB7017AC21AC7D6B002BC0BB /* Resources */,
 				AB7017AD21AC7D74002BC0BB /* Controller */,
 				AB7017AB21AC7D61002BC0BB /* View */,
@@ -73,6 +80,7 @@
 		AB7017AC21AC7D6B002BC0BB /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				ABBF6F9C21B1BC4000ED2474 /* bucket18.csv */,
 				AB70179921AC7D17002BC0BB /* AppDelegate.swift */,
 				AB7017A021AC7D30002BC0BB /* Assets.xcassets */,
 				AB7017A521AC7D30002BC0BB /* Info.plist */,
@@ -83,9 +91,18 @@
 		AB7017AD21AC7D74002BC0BB /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				AB70179B21AC7D17002BC0BB /* DataViewController.swift */,
+				ABBF6F9721B1BBE000ED2474 /* BucketItemCell.swift */,
+				ABBF6F9E21B1BC8E00ED2474 /* DataViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		ABBF6F9921B1BBE900ED2474 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ABBF6F9A21B1BC1A00ED2474 /* BucketItem.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,6 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB7017A421AC7D30002BC0BB /* LaunchScreen.storyboard in Resources */,
+				ABBF6F9D21B1BC4000ED2474 /* bucket18.csv in Resources */,
 				AB7017A121AC7D30002BC0BB /* Assets.xcassets in Resources */,
 				AB70179F21AC7D17002BC0BB /* Main.storyboard in Resources */,
 			);
@@ -159,7 +177,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB70179C21AC7D17002BC0BB /* DataViewController.swift in Sources */,
+				ABBF6F9F21B1BC8E00ED2474 /* DataViewController.swift in Sources */,
+				ABBF6F9B21B1BC1A00ED2474 /* BucketItem.swift in Sources */,
+				ABBF6F9821B1BBE000ED2474 /* BucketItemCell.swift in Sources */,
 				AB70179A21AC7D17002BC0BB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,7 +324,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/DataProjectLauren/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -312,6 +334,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = CTEC.DataProjectLauren;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -321,7 +344,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/DataProjectLauren/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -329,6 +354,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = CTEC.DataProjectLauren;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
