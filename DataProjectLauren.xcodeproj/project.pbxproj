@@ -60,8 +60,8 @@
 		AB70179821AC7D17002BC0BB /* DataProjectLauren */ = {
 			isa = PBXGroup;
 			children = (
-				ABBF6F9921B1BBE900ED2474 /* Model */,
 				AB7017AC21AC7D6B002BC0BB /* Resources */,
+				ABBF6F9921B1BBE900ED2474 /* Model */,
 				AB7017AD21AC7D74002BC0BB /* Controller */,
 				AB7017AB21AC7D61002BC0BB /* View */,
 			);
