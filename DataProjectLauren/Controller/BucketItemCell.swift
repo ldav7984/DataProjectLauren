@@ -64,6 +64,8 @@ class BucketItemCell: UITableViewCell
             bucketItemSignature.text = "Author goes here"
             bucketItemText.text = "Bucket item here"
         }
+        
+        bucketItemSymbol.text = randomEmoji()
     } //end of updateCellView
     
 }
