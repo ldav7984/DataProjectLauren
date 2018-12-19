@@ -25,7 +25,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="83.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Bucket item here" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6qh-sE-Sc0" userLabel="Label (text)">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Bucket item here" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6qh-sE-Sc0" userLabel="Label (text)">
                                             <rect key="frame" x="95" y="2" width="273" height="51"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -38,7 +38,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vRt-Xb-jXO" userLabel="Label (author)">
-                                            <rect key="frame" x="303" y="49" width="56" height="32"/>
+                                            <rect key="frame" x="95" y="49" width="56" height="32"/>
                                             <attributedString key="attributedText">
                                                 <fragment content="Author">
                                                     <attributes>
@@ -51,13 +51,14 @@
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="vRt-Xb-jXO" firstAttribute="leading" secondItem="rDX-Iw-GJf" secondAttribute="trailing" constant="216" id="9Bi-G5-U9d"/>
-                                        <constraint firstAttribute="bottom" secondItem="vRt-Xb-jXO" secondAttribute="bottom" constant="5.5" id="9bS-dt-Un7"/>
-                                        <constraint firstItem="vRt-Xb-jXO" firstAttribute="top" secondItem="QKp-E4-eK4" secondAttribute="top" constant="46" id="PXO-r5-jr8"/>
+                                        <constraint firstAttribute="bottom" secondItem="vRt-Xb-jXO" secondAttribute="bottom" constant="2.5" id="JQv-fY-ZIf"/>
+                                        <constraint firstItem="vRt-Xb-jXO" firstAttribute="top" secondItem="6qh-sE-Sc0" secondAttribute="bottom" constant="-4" id="PpW-wz-z6j"/>
                                         <constraint firstAttribute="bottom" secondItem="6qh-sE-Sc0" secondAttribute="bottom" constant="22.5" id="Rhl-7Q-QhU"/>
                                         <constraint firstItem="6qh-sE-Sc0" firstAttribute="top" secondItem="QKp-E4-eK4" secondAttribute="top" constant="2" id="TXe-pu-AKq"/>
+                                        <constraint firstItem="vRt-Xb-jXO" firstAttribute="top" secondItem="QKp-E4-eK4" secondAttribute="top" constant="49" id="Upy-1I-YgT"/>
                                         <constraint firstAttribute="bottom" secondItem="rDX-Iw-GJf" secondAttribute="bottom" constant="2.5" id="j7D-3V-00F"/>
                                         <constraint firstItem="rDX-Iw-GJf" firstAttribute="top" secondItem="QKp-E4-eK4" secondAttribute="top" constant="2" id="jDb-Vu-LDw"/>
+                                        <constraint firstItem="vRt-Xb-jXO" firstAttribute="leading" secondItem="rDX-Iw-GJf" secondAttribute="trailing" constant="8" id="sXT-tR-yH1"/>
                                         <constraint firstItem="6qh-sE-Sc0" firstAttribute="leading" secondItem="rDX-Iw-GJf" secondAttribute="trailing" constant="8" id="yLd-0I-G7V"/>
                                     </constraints>
                                 </tableViewCellContentView>
